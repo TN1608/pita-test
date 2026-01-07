@@ -176,8 +176,8 @@ export const benefits = [
                 <p>
                     Your lymphatic system is your body&#39;s internal cleaning crew—a network of vessels that
                     processes <span className={"font-semibold"}>
-                    3-4 liters of cellular waste and excess fluid every single day.
-                </span>
+                        3-4 liters of cellular waste and excess fluid every single day.
+                    </span>
                     When it&#39;s working properly, you don&#39;t even know it exists.
                 </p>
             </div>
@@ -222,7 +222,7 @@ export const benefits = [
                     <span className={"font-semibold"}>
                         And it accumulates. Day after day. Week after week.
                     </span>
-                    <br/>
+                    <br />
                     That gallon of fluid your body should be draining every 24 hours? It&#39;s pooling in your stomach, your
                     legs, your face—anywhere gravity and tissue structure allow it to settle.
                 </p>
@@ -251,11 +251,80 @@ export const benefits = [
                 <span className={"font-semibold"}>
                     Your cells are literally sitting in their own waste—and your body can&#39;t flush it out.
                 </span>
-                <br/>
+                <br />
                 The longer this goes on, the worse it gets. More congestion. More inflammation. More pressure on an
                 already compromised system.
             </div>
         )
     }
 
+]
+
+export const not_work_card_item = [
+    {
+        img: "",
+        description: "You cut out gluten, dairy, sugar. You ate clean for months.",
+        sub: "Your diet only addressed what goes IN. It didn't fix your body's broken ability to drain what's already there."
+    },
+    {
+        img: "",
+        description: "You tried viral lymphatic drops from TikTok.",
+        sub: "They’re just pricey water with trace herbs. The “active ingredients” are destroyed by stomach acid, and even if absorbed, only act as a mild diuretic. No vessel repair, no protein breakdown—just expensive urine."
+    },
+    {
+        img: "",
+        description: "You got lymphatic massage or bought compression socks.",
+        sub: "Temporary manual movement. Within 24-48 hours, everything backed up again because your vessels still can't pump on their own."
+    }
+]
+
+export const INGREDIENTS_DETAILS = [
+    {
+        tag: "Reactivate Lymphatic Pumps",
+        image: "",
+        title: "Cleavers Extract (100mg)",
+        description: 'Restores rhythmic vessel contractions that move lymph through your system. Contains iridoids that "wake up" muscle cells in vessel walls. 2024 study showed enhanced immune cell activity for better waste clearance. [Study: Enhanced NK cell activity in immunosuppressed models]'
+    },
+    {
+        tag: "Flush Excess Fluid",
+        image: "",
+        title: "Dandelion Extract (250mg)",
+        description: "Proven gentle diuretic that increases fluid excretion without harsh side effects. Human trial showed statistically significant increase in urination frequency (p<0.05) and excretion ratio (p<0.001). [Study: First human pilot study on diuretic effects]"
+    },
+    {
+        tag: "Break Down Protein Clogs",
+        image: "",
+        title: "Bromelain Powder (100mg)",
+        description: 'Proteolytic enzyme that clears blockages preventing drainage. Breaks down fibrin proteins creating "sludge" in vessels. 2024 RCT showed significantly greater reductions in swelling than placebo. [Study: As effective as prescription NSAIDs for inflammation]'
+    },
+    {
+        tag: "Strengthen Vessel Walls",
+        image: "",
+        title: "Rutin (100mg)",
+        description: "Reduces vessel permeability so fluid doesn't leak back into tissues. Clinical trials showed average 4.2 cm reduction in limb circumference over 6 months in lymphedema patients. [Study: Systematic review of 1,643 participants]"
+    },
+    {
+        tag: "Reduce Inflammation",
+        image: "",
+        title: "Burdock Root Powder (200mg)",
+        description: "Breaks the inflammation-congestion cycle. RCT showed significantly decreased inflammatory markers IL-6 and C-reactive protein (p<0.001). Also supports hormonal balance. [Study: 42-day trial in osteoarthritis patients]"
+    },
+    {
+        tag: "Boost Immune Clearance",
+        image: "",
+        title: "Echinacea Purpurea Extract (500mg)",
+        description: "Enhances lymphocyte activity for better waste removal. Meta-analysis of 30 trials with 5,600+ participants showed 40% reduction in recurrent infections. [Study: Increased NK cell cytotoxic activity]"
+    },
+    {
+        tag: "Support Metabolism",
+        image: "",
+        title: "Kelp Extract (30mg)",
+        description: "Provides iodine for thyroid function and healthy metabolic rate. Sluggish thyroid = sluggish lymphatic drainage. Contains fucoxanthin shown to reduce body fat in human trials. [Study: Dose-dependent increase in TSH levels]"
+    },
+    {
+        tag: "Antioxidant Protection",
+        image: "",
+        title: "Lemon Powder (50mg)",
+        description: "Protects vessels from oxidative damage. RCT showed 145% improvement in vascular function (p<0.001). Supports circulation and metabolic health. [Study: Triple-masked trial in 90 participants]"
+    }
 ]
