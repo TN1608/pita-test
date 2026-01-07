@@ -143,5 +143,119 @@ export const FAQ = [
             ]
         }
     },
+]
+
+export const card_item = [
+    {
+        img: "",
+        sub: "Your stomach is flat in the morning, but by evening you look six months pregnant."
+    },
+    {
+        img: "",
+        sub: 'Your ankles disappear into "kankles" by the end of the day.'
+    },
+    {
+        img: "",
+        sub: "That dimpled, cottage cheese texture on your thighs won't go away no matter what you try."
+    },
+    {
+        img: "",
+        sub: "You feel foggy and exhausted even after a full night's sleep."
+    },
+    {
+        img: "",
+        sub: "You wake up stiff and achy, like your body aged overnight."
+    }
+]
+
+export const benefits = [
+    {
+        img: "",
+        description: () => (
+            <div className={"lg:text-xl font-light text-md"}>
+                <p>
+                    Your lymphatic system is your body&#39;s internal cleaning crew—a network of vessels that
+                    processes <span className={"font-semibold"}>
+                    3-4 liters of cellular waste and excess fluid every single day.
+                </span>
+                    When it&#39;s working properly, you don&#39;t even know it exists.
+                </p>
+            </div>
+        ),
+        items: [
+            {
+                label: "Waste gets drained away",
+                isChecked: true,
+            },
+            {
+                label: "Fluid stays balanced.",
+                isChecked: true
+            },
+            {
+                label: "Your body feels light and energized.",
+                isChecked: false,
+            },
+            {
+                label: "Vessel pumping weakens.",
+                isChecked: false,
+            },
+            {
+                label: "Protein clogs form",
+                isChecked: false
+            },
+            {
+                label: "Vessel walls become leaky.",
+                isChecked: false
+            }
+        ],
+        footer: () => (
+            <div className={"text-md lg:text-xl font-light"}>
+                Instead of processing and removing waste, it backs up in your tissues.
+            </div>
+        )
+    },
+    {
+        img: "",
+        description: () => (
+            <div className={"lg:text-xl font-light text-md"}>
+                <p>
+                    <span className={"font-semibold"}>
+                        And it accumulates. Day after day. Week after week.
+                    </span>
+                    <br/>
+                    That gallon of fluid your body should be draining every 24 hours? It&#39;s pooling in your stomach, your
+                    legs, your face—anywhere gravity and tissue structure allow it to settle.
+                </p>
+            </div>
+        ),
+        items: [
+            {
+                label: "That's why you're bloated.",
+                isChecked: true,
+            },
+            {
+                label: "That's why your ankles swell.",
+                isChecked: false,
+            },
+            {
+                label: "That's why you see cellulite.",
+                isChecked: false,
+            },
+            {
+                label: "That's why you feel exhausted and foggy.",
+                isChecked: false,
+            }
+        ],
+        footer: () => (
+            <div className={"text-md lg:text-xl font-light"}>
+                <span className={"font-semibold"}>
+                    Your cells are literally sitting in their own waste—and your body can&#39;t flush it out.
+                </span>
+                <br/>
+                The longer this goes on, the worse it gets. More congestion. More inflammation. More pressure on an
+                already compromised system.
+            </div>
+        )
+    }
 
 ]
