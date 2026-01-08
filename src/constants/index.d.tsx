@@ -1,3 +1,5 @@
+import {forEach} from "eslint-config-next";
+
 export const PRODUCT = {
     title: "New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptique™",
     description: "",
@@ -328,3 +330,4 @@ export const INGREDIENTS_DETAILS = [
         description: "Protects vessels from oxidative damage. RCT showed 145% improvement in vascular function (p<0.001). Supports circulation and metabolic health. [Study: Triple-masked trial in 90 participants]"
     }
 ]
+

@@ -3,6 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "../styles/globals.css";
 import {ThemeProvider} from "@/context/theme-provider";
 import Header from "@/components/fragments/Header";
+import {Toaster} from "@/components/ui/sonner";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
+            <Toaster/>
             <Header/>
             <div className={"min-h-screen flex flex-col"}>
                 {children}
