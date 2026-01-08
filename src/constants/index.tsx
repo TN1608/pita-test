@@ -1,4 +1,4 @@
-import {forEach} from "eslint-config-next";
+import { Users, RefreshCw, Minimize2, Smile, Activity, Leaf } from "lucide-react";
 
 export const PRODUCT = {
     title: "New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptique™",
@@ -10,34 +10,38 @@ export const PRODUCT = {
     sub_details: [
         {
             label: "Join over 93 Thousand who say - it WORKS!",
-            icon: ""
+            icon: <Users className="w-6 h-6 text-[#1a1a1a]" />
         },
         {
             label: "Restores your body’s natural 24-hour lymphatic cycle",
-            icon: ""
+            icon: <RefreshCw className="w-6 h-6 text-[#1a1a1a]" />
         },
         {
             label: "Helps reduce fluid retention and the appearance of puffiness and bloating",
-            icon: ""
+            icon: <Minimize2 className="w-6 h-6 text-[#1a1a1a]" />
         },
         {
             label: "Helps fall asleep faster, stay asleep longer and wake up energized",
-            icon: ""
+            icon: <Smile className="w-6 h-6 text-[#1a1a1a]" />
         },
         {
             label: "Eliminates joint stiffness, pain, morning creakiness and feel more grounded",
-            icon: ""
+            icon: <Activity className="w-6 h-6 text-[#1a1a1a]" />
         },
         {
             label: "Boosts energy, mental clarity and emotional balance",
-            icon: ""
+            icon: <Leaf className="w-6 h-6 text-[#1a1a1a]" />
         }
     ],
     images: [
-        "/product-image-1.png",
-        "/product-image-2.png",
-        "/product-image-3.png"
-
+        "/img/product/1.jpg",
+        "/img/product/2.jpg",
+        "/img/product/3.jpg",
+        "/img/product/4.jpg",
+        "/img/product/5.jpg",
+        "/img/product/6.jpg",
+        "/img/product/7.png",
+        "/img/product/8.png"
     ],
     packages: [
         {
@@ -330,4 +334,17 @@ export const INGREDIENTS_DETAILS = [
         description: "Protects vessels from oxidative damage. RCT showed 145% improvement in vascular function (p<0.001). Supports circulation and metabolic health. [Study: Triple-masked trial in 90 participants]"
     }
 ]
+
+export const SUPPLEMENT_FACTS = [
+    { name: "Echinacea purpurea Extract (whole plant)", amount: "500 mg", dv: "**", isItalic: true, italicText: "Echinacea purpurea" },
+    { name: "Dandelion Extract (leaf)", amount: "250 mg", dv: "**" },
+    { name: "Burdock Powder (root)", amount: "200 mg", dv: "**" },
+    { name: "Cleavers Extract (Galium aparine) (whole herb)", amount: "100 mg", dv: "**", isItalic: true, italicText: "Galium aparine" },
+    { name: "Rutin (Sophora japonica) (whole flower bud)", amount: "100 mg", dv: "**", isItalic: true, italicText: "Sophora japonica" },
+    { name: "Bromelain Powder (Ananas comosus) (stem)", amount: "100 mg", dv: "**", isItalic: true, italicText: "Ananas comosus" },
+    { sub: "(std. to 2400 Gdu/g)" },
+    { name: "Lemon Peel Powder (peel)", amount: "50 mg", dv: "**" },
+    { name: "Kelp Extract (Laminaria japonica)", amount: "30 mg", dv: "**", isItalic: true, italicText: "Laminaria japonica" },
+    { sub: "(std. to 10% fucoxanthin)" },
+];
 

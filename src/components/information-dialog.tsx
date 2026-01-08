@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckCircle2, X } from "lucide-react";
+import { SUPPLEMENT_FACTS } from "@/constants";
 
 interface InformationDialogProps {
     isOpen: boolean;
@@ -15,23 +16,11 @@ interface InformationDialogProps {
 }
 
 export default function InformationDialog({ isOpen, setOpen }: InformationDialogProps) {
-    const ingredients = [
-        { name: <span><i>Echinacea purpurea</i> Extract (whole plant)</span>, amount: "500 mg", dv: "**" },
-        { name: "Dandelion Extract (leaf)", amount: "250 mg", dv: "**" },
-        { name: "Burdock Powder (root)", amount: "200 mg", dv: "**" },
-        { name: <span>Cleavers Extract (<i>Galium aparine</i>) (whole herb)</span>, amount: "100 mg", dv: "**" },
-        { name: <span>Rutin (<i>Sophora japonica</i>) (whole flower bud)</span>, amount: "100 mg", dv: "**" },
-        { name: <span>Bromelain Powder (<i>Ananas comosus</i>) (stem)</span>, amount: "100 mg", dv: "**" },
-        { sub: "(std. to 2400 Gdu/g)" },
-        { name: "Lemon Peel Powder (peel)", amount: "50 mg", dv: "**" },
-        { name: <span>Kelp Extract (<i>Laminaria japonica</i>)</span>, amount: "30 mg", dv: "**" },
-        { sub: "(std. to 10% fucoxanthin)" },
-    ];
 
     return (
         <Dialog open={isOpen} onOpenChange={setOpen}>
             <DialogTrigger asChild>
-                <Button className="w-full bg-white/80 backdrop-blur-sm py-6 rounded-full flex items-center justify-center gap-2 border border-black/10 text-slate-700 font-medium text-sm md:text-base hover:bg-white/90 transition-all shadow-sm">
+                <Button className="w-1/2 mx-auto bg-white/80 backdrop-blur-sm py-2 rounded-full flex items-center justify-center gap-2 border border-black/10 text-slate-700 font-light text-lg hover:bg-white/90 transition-all shadow-sm">
                     <Image src={"/img/leaf.png"} alt={"Leaf Icon"} width={20} height={20} className="w-5 h-5" />
                     Nutritional Information
                 </Button>
@@ -65,12 +54,20 @@ export default function InformationDialog({ isOpen, setOpen }: InformationDialog
                         </div>
 
                         <div className="space-y-0 text-sm md:text-base">
-                            {ingredients.map((item, idx) => (
+                            {SUPPLEMENT_FACTS.map((item, idx) => (
                                 <div key={idx} className={`flex justify-between items-start py-1 ${!item.sub ? 'border-b border-white/30' : ''}`}>
                                     {item.name ? (
                                         <>
                                             <span className="flex-1 pr-4 font-medium">
-                                                {item.name}
+                                                {item.isItalic && item.italicText ? (
+                                                    <span>
+                                                        {item.name.split(item.italicText)[0]}
+                                                        <i>{item.italicText}</i>
+                                                        {item.name.split(item.italicText)[1]}
+                                                    </span>
+                                                ) : (
+                                                    item.name
+                                                )}
                                             </span>
                                             <div className="flex gap-4 min-w-[80px] justify-end">
                                                 <span>{item.amount}</span>

@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
 import ClientHomePage from "@/components/pages/Product/client";
-import {log} from "node:util";
 
 export const metadata: Metadata = {
     title: "Home Page",
