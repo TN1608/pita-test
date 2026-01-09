@@ -5,6 +5,7 @@ import SymptomsSection from "@/components/pages/Product/SymptomsSection";
 import BenefitsSection from "@/components/pages/Product/BenefitsSection";
 import WhyFailedSection from "@/components/pages/Product/WhyFailedSection";
 import IngredientsSection from "@/components/pages/Product/IngredientsSection";
+import ReviewsSection from "@/components/pages/Product/ReviewsSection";
 import { benefits } from "@/constants";
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function Home() {
 
             <div className="w-full">
                 <IngredientsSection />
+            </div>
+
+            <div className="w-full">
+                <ReviewsSection />
             </div>
         </div>
     );

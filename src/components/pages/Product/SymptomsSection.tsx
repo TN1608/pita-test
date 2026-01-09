@@ -22,7 +22,6 @@ export default function SymptomsSection() {
                 {card_item.map((item, index) => (
                     <div key={index} className="flex flex-col h-full">
                         <div className="relative aspect-square w-full mb-4 overflow-hidden rounded-lg bg-gray-100">
-                            {/* Placeholder logic since img is empty in constant */}
                             {item.img ? (
                                 <Image
                                     src={item.img}

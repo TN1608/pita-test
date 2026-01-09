@@ -348,3 +348,67 @@ export const SUPPLEMENT_FACTS = [
     { sub: "(std. to 10% fucoxanthin)" },
 ];
 
+export const REVIEWS_SUMMARY = {
+    average: 4.67,
+    total: 110,
+    breakdown: [
+        { stars: 5, count: 84 },
+        { stars: 4, count: 17 },
+        { stars: 3, count: 8 },
+        { stars: 2, count: 1 },
+        { stars: 1, count: 0 },
+    ]
+};
+
+export const REVIEWS_LIST = [
+    {
+        name: "Anonymous",
+        location: "",
+        rate_count: 5,
+        isVerified: true,
+        date: "12/08/2025",
+        title: "",
+        description: "Pretty sure I'm seeing improvement in the smoothness of my skin after 30 days. Will continue with confidence it's working.",
+        reviewType: "Review collected via store invitation"
+    },
+    {
+        name: "Anonymous",
+        location: "",
+        rate_count: 5,
+        isVerified: true,
+        date: "12/01/2025",
+        title: "",
+        description: "One month and I've already seen a difference!",
+        reviewType: "Review collected via store invitation"
+    },
+    {
+        name: "Donabeth Houx",
+        location: "",
+        rate_count: 5,
+        isVerified: true,
+        date: "11/23/2025",
+        title: "",
+        description: "I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my gosh! It's a miracle! I no longer have to worry about elephantitus in my future! Thank you so much!!!!!!",
+        reviewType: "Review collected via store invitation"
+    },
+    {
+        name: "Dawn Camacho",
+        location: "",
+        rate_count: 5,
+        isVerified: true,
+        date: "11/17/2025",
+        title: "",
+        description: "It took me about 60 days to notice a difference in smoothness. My husband noticed which is why I purchased another round. I'm happy.",
+        reviewType: "Review collected via store invitation"
+    },
+    {
+        name: "Anonymous",
+        location: "",
+        rate_count: 5,
+        isVerified: true,
+        date: "11/13/2025",
+        title: "",
+        description: "I have noticed a difference on my swelling.",
+        reviewType: "Review collected via store invitation"
+    }
+];
