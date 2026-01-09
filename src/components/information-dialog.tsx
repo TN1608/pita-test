@@ -20,7 +20,7 @@ export default function InformationDialog({ isOpen, setOpen }: InformationDialog
     return (
         <Dialog open={isOpen} onOpenChange={setOpen}>
             <DialogTrigger asChild>
-                <Button className="w-1/2 mx-auto bg-white/80 backdrop-blur-sm py-2 rounded-full flex items-center justify-center gap-2 border border-black/10 text-slate-700 font-light text-lg hover:bg-white/90 transition-all shadow-sm">
+                <Button className="w-full max-w-[280px] md:w-1/2 mx-auto bg-white/80 backdrop-blur-sm py-2.5 md:py-2 rounded-full flex items-center justify-center gap-2 border border-black/10 text-slate-700 font-light text-base md:text-lg hover:bg-white/90 transition-all shadow-sm">
                     <Image src={"/img/leaf.png"} alt={"Leaf Icon"} width={20} height={20} className="w-5 h-5" />
                     Nutritional Information
                 </Button>

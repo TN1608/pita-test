@@ -31,9 +31,10 @@ export default function ProductCard() {
                     >
                         {pkg.featured && (
                             <div className="absolute -top-3 -right-2 z-20">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 p-1 text-center text-[8px] font-bold leading-tight text-white shadow-sm ring-2 ring-white transform rotate-12">
+                                {/* <span className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 p-1 text-center text-[8px] font-bold leading-tight text-white shadow-sm ring-2 ring-white transform rotate-12">
                                     New Year's Sale
-                                </span>
+                                </span> */}
+                                <Image src={"/img/ny_ba dge.png"} alt={"Featured"} width={100} height={100} className="w-full h-auto object-contain" />
                             </div>
                         )}
                         <Card className="overflow-hidden border-2 shadow-none hover:border-[#009353]/50 transition-colors p-0 gap-0 w-full">

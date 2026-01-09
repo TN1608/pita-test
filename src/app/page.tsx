@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import ClientHomePage from "@/components/pages/Product/client";
 
 export const metadata: Metadata = {
@@ -7,11 +7,9 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-
-    
     return (
-        <div className={"flex-col bg-white flex items-center justify-center px-80 py-14"}>
-            <ClientHomePage/>
+        <div className={"flex-col flex items-center justify-center container mx-auto lg:px-48 lg:py-14"}>
+            <ClientHomePage />
         </div>
     );
 }

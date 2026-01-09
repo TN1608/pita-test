@@ -1,19 +1,20 @@
-import { Star, Award, User, X, Truck, RotateCcw, Clock } from "lucide-react";
+import { Star, Award, Truck, RotateCcw, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PRODUCT, REVIEW } from "@/constants";
 import ProductCard from "@/components/product-card";
 import Image from "next/image";
 import FAQ_section from "./FAQ_section";
+import ReviewCard from "@/components/review-card";
 
 export default function ProductDetails() {
     return (
-        <div className="flex flex-col gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-6">
             {/* Header / Ratings */}
             <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-3 text-sm md:text-base">
                     <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((star) => (
-                            <div key={star} className="bg-[#00d48a] p-1 rounded-sm">
+                            <div key={star} className="bg-emerald-500 p-1 rounded-sm">
                                 <Star className="w-3 h-3 text-white fill-white" />
                             </div>
                         ))}
@@ -31,7 +32,7 @@ export default function ProductDetails() {
             {/* Benefits List */}
             <div className="flex flex-col gap-5 mt-2">
                 {PRODUCT.sub_details.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-4">
+                    <div key={idx} className="flex items-center gap-4">
                         <div className="shrink-0 mt-1 p-2 rounded-full bg-transparent">
                             {item.icon}
                         </div>
@@ -45,7 +46,7 @@ export default function ProductDetails() {
             {/* Product Options */}
             <ProductCard />
 
-
+            {/*CTA*/}
             <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2 text-sm text-[#1a1a1a]">
                     <Truck className="w-5 h-5 text-[#1a1a1a]" />
@@ -92,35 +93,7 @@ export default function ProductDetails() {
 
                 {/* Review Card */}
                 {REVIEW.map((review, idx) => (
-                    <div key={idx} className="bg-[#fdf8ee] rounded-xl p-6 flex flex-col gap-4">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-full overflow-hidden bg-slate-300">
-                                {/* Placeholder for review image */}
-                                <User className="w-full h-full text-slate-500 bg-slate-200 p-2" />
-                            </div>
-                            <div className="flex flex-col">
-                                <div className="flex items-center gap-2">
-                                    <span className="font-medium text-[#1a1a1a]">{review.name}</span>
-                                    {review.isVerified && (
-                                        <span className="flex items-center gap-1 text-xs text-[#009353] font-medium">
-                                            <Award className="w-3 h-3" /> Verified Customer
-                                        </span>
-                                    )}
-                                </div>
-                                <div className="flex gap-0.5">
-                                    {[...Array(review.rate_count)].map((_, i) => (
-                                        <Star key={i} className="w-3.5 h-3.5 fill-[#00d48a] text-[#00d48a]" />
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h4 className="font-bold text-[#1a1a1a]">{review.title}</h4>
-                            <p className="text-slate-700 text-sm leading-relaxed">
-                                {review.description}
-                            </p>
-                        </div>
-                    </div>
+                    <ReviewCard key={idx} review={review} />
                 ))}
             </div>
 
