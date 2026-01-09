@@ -153,23 +153,23 @@ export const FAQ = [
 
 export const card_item = [
     {
-        img: "",
+        img: "/img/card_items/1.png",
         sub: "Your stomach is flat in the morning, but by evening you look six months pregnant."
     },
     {
-        img: "",
+        img: "/img/card_items/2.png",
         sub: 'Your ankles disappear into "kankles" by the end of the day.'
     },
     {
-        img: "",
+        img: "/img/card_items/3.png",
         sub: "That dimpled, cottage cheese texture on your thighs won't go away no matter what you try."
     },
     {
-        img: "",
+        img: "/img/card_items/4.png",
         sub: "You feel foggy and exhausted even after a full night's sleep."
     },
     {
-        img: "",
+        img: "/img/card_items/5.png",
         sub: "You wake up stiff and achy, like your body aged overnight."
     }
 ]
