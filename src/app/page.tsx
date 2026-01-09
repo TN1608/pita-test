@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import ClientHomePage from "@/components/pages/Product/client";
 import LogoLoop from '@/components/LogoLoop';
 import SymptomsSection from "@/components/pages/Product/SymptomsSection";
+import BenefitsSection from "@/components/pages/Product/BenefitsSection";
+import WhyFailedSection from "@/components/pages/Product/WhyFailedSection";
+import IngredientsSection from "@/components/pages/Product/IngredientsSection";
+import { benefits } from "@/constants";
 
 export const metadata: Metadata = {
     title: "Home Page",
@@ -32,6 +36,24 @@ export default function Home() {
             />
             <div className="w-full">
                 <SymptomsSection />
+            </div>
+
+            <div className="flex flex-col space-y-0 lg:space-y-12">
+                {benefits.map((item, index) => (
+                    <BenefitsSection
+                        key={index}
+                        data={item}
+                        isReversed={index % 2 !== 0}
+                    />
+                ))}
+            </div>
+
+            <div className="w-full">
+                <WhyFailedSection />
+            </div>
+
+            <div className="w-full">
+                <IngredientsSection />
             </div>
         </div>
     );
