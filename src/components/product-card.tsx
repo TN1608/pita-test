@@ -39,7 +39,7 @@ export default function ProductCard() {
                         )}
                         <Card className="overflow-hidden border-2 shadow-none hover:border-[#009353]/50 transition-colors p-0 gap-0 w-full">
                             <CardContent className="p-0">
-                                <div className="flex items-center justify-between p-4 bg-white w-full">
+                                <div className="flex items-center justify-between p-3 md:p-4 bg-white w-full">
                                     <div className="flex items-center gap-4">
                                         <RadioGroupItem
                                             value={pkg.label}
@@ -47,7 +47,7 @@ export default function ProductCard() {
                                             className="w-6 h-6 border-slate-300 data-[state=checked]:border-[#009353] data-[state=checked]:text-[#009353]"
                                         />
                                         <div className="flex flex-col">
-                                            <span className="font-bold text-lg text-[#1a1a1a]">{pkg.label}</span>
+                                            <span className="font-bold text-base md:text-lg text-[#1a1a1a]">{pkg.label}</span>
                                             <div className="text-sm text-slate-600 flex gap-1">
                                                 <span>{pkg.description}</span>
                                                 {pkg.savings > 0 && (
@@ -56,9 +56,9 @@ export default function ProductCard() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col items-end">
-                                        <span className="font-bold text-xl text-[#1a1a1a]">${(pkg.price / (pkg.label.includes("3") ? 5 : pkg.label.includes("2") ? 3 : 1)).toFixed(2)}</span>
-                                        <span className="text-sm text-slate-400 z-30 line-through">${pkg.price}</span>
+                                    <div className="flex flex-col items-end shrink-0">
+                                        <span className="font-bold text-lg md:text-xl text-[#1a1a1a]">${(pkg.price / (pkg.label.includes("3") ? 5 : pkg.label.includes("2") ? 3 : 1)).toFixed(2)}</span>
+                                        <span className="text-xs md:text-sm text-slate-400 z-30 line-through">${pkg.price}</span>
                                     </div>
                                 </div>
 

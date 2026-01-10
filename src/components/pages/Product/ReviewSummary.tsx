@@ -83,14 +83,13 @@ export default function ReviewSummary() {
             {/* Authenticity Badge */}
             <div className="mt-16 flex flex-col items-center">
                 <Image
-                    src="/img/authenticity_badge.png"
+                    src="/img/download.svg"
                     alt="Diamond Authenticity"
                     width={80}
                     height={80}
                     className="opacity-80"
                 />
-                <span className="text-[10px] font-bold text-blue-800 mt-2 tracking-tighter uppercase">Diamond Authenticity</span>
-                <span className="text-[12px] font-black text-blue-800 -mt-1">100.0</span>
+                <p className="text-xs text-blue-500 mt-2 font-bold">100.0</p>
             </div>
         </div>
     );

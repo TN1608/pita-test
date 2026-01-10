@@ -25,10 +25,10 @@ export default function BenefitsSection({ data, isReversed = false }: Props) {
 
     return (
         <section className="container mx-auto px-4 py-8 lg:py-16 lg:px-32">
-            <div className={`flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
 
+            <div className={`flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
                 {/* Image Column - Order handling via Grid/Flex */}
-                <div className={`relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 ${isReversed ? 'lg:order-2' : ''}`}>
+                <div className={`relative w-full aspect-square lg:aspect-4/3 rounded-2xl overflow-hidden bg-gray-100 ${isReversed ? 'lg:order-2' : ''}`}>
                     {img ? (
                         <Image
                             src={img}

@@ -415,22 +415,22 @@ export const REVIEWS_LIST = [
 
 export const TRUST_FEATURES = [
     {
-        icon: <Truck className="w-12 h-12 text-[#2F6D54]" />,
+        icon: <Truck className="w-12 h-12 text-emerald-500" />,
         title: "Free Shipping from USA",
         description: "On all orders"
     },
     {
-        icon: <HandHeart className="w-12 h-12 text-[#2F6D54]" />,
+        icon: <HandHeart className="w-12 h-12 text-emerald-500" />,
         title: "Naturally Supports Your Body",
         description: "Promotes healthy immune cell functions"
     },
     {
-        icon: <Leaf className="w-12 h-12 text-[#2F6D54]" />,
+        icon: <Leaf className="w-12 h-12 text-emerald-500" />,
         title: "100% Natural Ingredients",
         description: "8 active, natural ingredients"
     },
     {
-        icon: <CalendarCheck className="w-12 h-12 text-[#2F6D54]" />,
+        icon: <CalendarCheck className="w-12 h-12 text-emerald-500" />,
         title: "Try it Risk Free for 60 Days",
         description: "60-day money-back guarantee"
     }

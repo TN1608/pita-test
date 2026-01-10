@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ClientHomePage from "@/components/pages/Product/client";
+import HeroSection from "@/components/pages/Product/client";
 import LogoLoop from '@/components/LogoLoop';
 import SymptomsSection from "@/components/pages/Product/SymptomsSection";
 import BenefitsSection from "@/components/pages/Product/BenefitsSection";
@@ -25,7 +25,7 @@ export default function Home() {
     ]
     return (
         <div className={"flex-col flex items-center justify-center space-y-8"}>
-            <ClientHomePage />
+            <HeroSection />
             {/* Logo Velocity */}
             <h1 className={"lg:text-4xl font-light text-center text-accent"}>As Seen In</h1>
             <LogoLoop
@@ -44,6 +44,9 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col space-y-0 lg:space-y-12">
+                <h1 className="text-2xl lg:text-4xl font-serif text-[#1A1A1A] mb-4 text-center">
+                    Your <span className="text-emerald-500 text-center">Hidden</span> Drainage System
+                </h1>
                 {benefits.map((item, index) => (
                     <BenefitsSection
                         key={index}
@@ -64,16 +67,16 @@ export default function Home() {
             <div className="w-full">
                 <ReviewsSection />
             </div>
-            <div className="w-full py-12 px-2 bg-[#F9F6F0]">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+            <div className="w-full py-12 px-4 bg-[#F9F6F0]">
+                <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-12 lg:gap-16">
                     {TRUST_FEATURES.map((feature, index) => (
-                        <div key={index} className="flex flex-col items-center text-center space-y-4">
-                            <div className="p-2">
+                        <div key={index} className="flex flex-col items-center text-center space-y-3">
+                            <div className="p-0">
                                 {feature.icon}
                             </div>
-                            <div className="space-y-2">
-                                <h3 className="font-semibold text-secondary text-lg sm:text-xl">{feature.title}</h3>
-                                <p className="text-sm sm:text-base text-secondary max-w-xs">{feature.description}</p>
+                            <div className="space-y-1 px-1">
+                                <h3 className="font-bold text-[#1A1A1A] text-sm sm:text-lg leading-tight">{feature.title}</h3>
+                                <p className="text-xs sm:text-base text-gray-600 max-w-[160px] sm:max-w-xs mx-auto">{feature.description}</p>
                             </div>
                         </div>
                     ))}

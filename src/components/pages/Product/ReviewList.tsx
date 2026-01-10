@@ -55,7 +55,7 @@ export default function ReviewList({ reviews }: ReviewListProps) {
                 ))}
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 text-red-400">
                 <Pagination>
                     <PaginationContent>
                         <PaginationItem>
