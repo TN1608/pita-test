@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function IngredientsSection() {
     return (
-        <section className="container mx-auto px-4 py-16 lg:py-24 bg-[#fffdf5]">
+        <section className="container mx-auto px-4 py-16 lg:py-24">
             <div className="text-center mb-12 max-w-4xl mx-auto">
                 <h2 className="text-3xl lg:text-4xl font-serif text-[#1A1A1A] mb-4">
                     The <span className="text-emerald-500">8-Ingredient System</span> That Restores What

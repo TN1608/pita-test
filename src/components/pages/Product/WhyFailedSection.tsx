@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function WhyFailedSection() {
     return (
-        <section className="container mx-auto px-4 py-16 lg:py-24 bg-[#fffdf5]">
+        <section className="container mx-auto px-4 py-16 lg:py-24">
             <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-serif text-[#1A1A1A]">
                     Why Nothing Has <span className="text-emerald-500">Worked</span>

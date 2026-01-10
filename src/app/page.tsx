@@ -5,8 +5,12 @@ import SymptomsSection from "@/components/pages/Product/SymptomsSection";
 import BenefitsSection from "@/components/pages/Product/BenefitsSection";
 import WhyFailedSection from "@/components/pages/Product/WhyFailedSection";
 import IngredientsSection from "@/components/pages/Product/IngredientsSection";
+import ExpertAdviceSection from "@/components/pages/Product/ExpertAdviceSection";
+import FAQSection from "@/components/pages/Product/FAQSection";
+import CTA2Section from "@/components/pages/Product/CTA2Section";
+import FinalRestorationSection from "@/components/pages/Product/FinalRestorationSection";
 import ReviewsSection from "@/components/pages/Product/ReviewsSection";
-import { benefits } from "@/constants";
+import { benefits, TRUST_FEATURES } from "@/constants";
 
 export const metadata: Metadata = {
     title: "Home Page",
@@ -49,17 +53,49 @@ export default function Home() {
                 ))}
             </div>
 
-            <div className="w-full">
+            <div className="w-full bg-[#F9F6F0]">
                 <WhyFailedSection />
             </div>
 
-            <div className="w-full">
+            <div className="w-full bg-[#F9F6F0]">
                 <IngredientsSection />
             </div>
 
             <div className="w-full">
                 <ReviewsSection />
             </div>
+            <div className="w-full py-12 px-2 bg-[#F9F6F0]">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+                    {TRUST_FEATURES.map((feature, index) => (
+                        <div key={index} className="flex flex-col items-center text-center space-y-4">
+                            <div className="p-2">
+                                {feature.icon}
+                            </div>
+                            <div className="space-y-2">
+                                <h3 className="font-semibold text-secondary text-lg sm:text-xl">{feature.title}</h3>
+                                <p className="text-sm sm:text-base text-secondary max-w-xs">{feature.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="w-full">
+                <ExpertAdviceSection />
+            </div>
+
+            <div className="w-full">
+                <FAQSection />
+            </div>
+
+            <div className="w-full">
+                <CTA2Section />
+            </div>
+
+            <div className="w-full">
+                <FinalRestorationSection />
+            </div>
+
+
         </div>
     );
 }
