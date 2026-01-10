@@ -11,7 +11,7 @@ export default function CTA2Section() {
                 {/* Left Side: Mission & Stats Box */}
                 <div className="space-y-8">
                     <div className="space-y-4">
-                        <h2 className="text-3xl lg:text-5xl font-serif text-[#1A1A1A] leading-tight">
+                        <h2 className="text-xl lg:text-3xl font-serif text-[#1A1A1A] leading-tight">
                             We're On A Mission To Help 100,000,000 Women Visibly, Naturally Get Rid Of Bloating...And Feel Like Themselves Again
                         </h2>
                         <p className="text-[#1A1A1A] text-lg font-medium">

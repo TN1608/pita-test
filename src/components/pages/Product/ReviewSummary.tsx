@@ -8,12 +8,14 @@ export default function ReviewSummary() {
     return (
         <div className="max-w-6xl mx-auto px-4 pt-16 pb-8 text-center bg-white">
             {/* Trustpilot Header */}
-            <div className="flex items-center justify-center gap-1.5 mb-8 text-[11px] font-medium tracking-wide text-gray-700">
-                <span>Excellent 4.8 out of 5</span>
-                <div className="flex items-center gap-0.5 ml-1">
-                    <Star className="w-3.5 h-3.5 fill-[#00b67a] text-[#00b67a]" />
-                    <span className="font-bold">Trustpilot</span>
-                </div>
+            <div className="flex justify-center mb-8">
+                <Image
+                    src="/img/imgi_92_trustpilot.png"
+                    alt="Trustpilot"
+                    width={1200}
+                    height={1200}
+                    className="h-auto w-[400px]"
+                />
             </div>
 
             <h2 className="text-3xl lg:text-4xl font-serif text-gray-900 mb-4 leading-tight">

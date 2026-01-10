@@ -1,29 +1,25 @@
 "use client"
 
-import React from 'react';
-import { Star } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import { BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
 
 export default function FinalRestorationSection() {
     return (
-        <section className="bg-[#FAF9F6] py-16 lg:py-24">
+        <section className="bg-amber-50 py-16 lg:py-24">
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Content */}
                     <div className="space-y-8">
-                        <div className="flex items-center gap-4">
-                            <div className="flex gap-0.5">
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-[#009353] text-[#009353]" />
-                                ))}
-                            </div>
-                            <span className="text-sm text-[#1A1A1A] font-medium tracking-tight">
-                                93,000+ Customers Worldwide ★ Trustpilot
-                            </span>
-                        </div>
+                        <Image
+                            src="/img/imgi_92_trustpilot.png"
+                            alt="Trustpilot"
+                            width={1200}
+                            height={1200}
+                            className="h-auto w-[400px]"
+                        />
 
                         <h2 className="text-3xl lg:text-5xl font-serif text-[#1A1A1A] leading-tight">
                             Stop Masking Symptoms. Start Restoring Root Cause.

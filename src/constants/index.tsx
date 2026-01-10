@@ -80,6 +80,58 @@ export const PRODUCT = {
     ]
 }
 
+export const videos_VIDEOS = [
+    {
+        thumbnail: "/img/videos/1.mp4",
+        videoUrl: "/img/videos/1.mp4",
+        title: "Tackle"
+    },
+    {
+        thumbnail: "/img/videos/2.mov",
+        videoUrl: "/img/videos/2.mov",
+        title: "Results"
+    },
+    {
+        thumbnail: "/img/videos/3.mp4",
+        videoUrl: "/img/videos/3.mp4",
+        title: "SmoothSkin"
+    },
+    {
+        thumbnail: "/img/videos/4.mp4",
+        videoUrl: "/img/videos/4.mp4",
+        title: "Inside out"
+    },
+    {
+        thumbnail: "/img/videos/5.mp4",
+        videoUrl: "/img/videos/5.mp4",
+        title: "Energy"
+    },
+    {
+        thumbnail: "/img/videos/6.mp4",
+        videoUrl: "/img/videos/6.mp4",
+        title: "Transformation"
+    },
+    {
+        thumbnail: "/img/videos/7.mp4",
+        videoUrl: "/img/videos/7.mp4",
+        title: "Recovery"
+    },
+    {
+        thumbnail: "/img/videos/8.mp4",
+        videoUrl: "/img/videos/8.mp4",
+        title: "Confidence"
+    },
+    {
+        thumbnail: "/img/videos/9.mp4",
+        videoUrl: "/img/videos/9.mp4",
+        title: "Bloat-Free"
+    },
+    {
+        thumbnail: "/img/videos/10.mp4",
+        videoUrl: "/img/videos/10.mp4",
+        title: "Real Results"
+    }
+];
 export const REVIEW = [
     {
         name: "Margaret Ellison | FL",

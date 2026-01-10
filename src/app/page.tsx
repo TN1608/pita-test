@@ -6,6 +6,7 @@ import BenefitsSection from "@/components/pages/Product/BenefitsSection";
 import WhyFailedSection from "@/components/pages/Product/WhyFailedSection";
 import IngredientsSection from "@/components/pages/Product/IngredientsSection";
 import ExpertAdviceSection from "@/components/pages/Product/ExpertAdviceSection";
+import StoriesSection from "@/components/pages/Product/StoriesSection";
 import FAQSection from "@/components/pages/Product/FAQSection";
 import CTA2Section from "@/components/pages/Product/CTA2Section";
 import FinalRestorationSection from "@/components/pages/Product/FinalRestorationSection";
@@ -83,7 +84,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full">
-                <ExpertAdviceSection />
+                <StoriesSection />
             </div>
 
             <div className="w-full">
