@@ -10,11 +10,11 @@ export default function ReviewSummary() {
             {/* Trustpilot Header */}
             <div className="flex justify-center mb-8">
                 <Image
-                    src="/img/imgi_92_trustpilot.png"
+                    src="/img/imgi_92_Trustpilot.png"
                     alt="Trustpilot"
                     width={1200}
                     height={1200}
-                    className="h-auto w-[400px]"
+                    className="h-auto w-100"
                 />
             </div>
 
