@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pita Test - Sculptique Clone
 
-## Getting Started
+A Next.js project developed to clone the [Sculptique Lymph-CC Select](https://trysculptique.com/products/lymph-cc-select) product page for practice and frontend skill assessment.
 
-First, run the development server:
+## 🔗 Project Links
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **GitHub Repository:** [https://github.com/TN1608/pita-test](https://github.com/TN1608/pita-test)
+- **Live Preview (Vercel):** [https://pita-test.vercel.app/](https://pita-test.vercel.app/)
+- **Original Reference:** [Sculptique Product Page](https://trysculptique.com/products/lymph-cc-select)
+
+## 🚀 Tech Stack
+
+This project leverages modern technologies in the React/Next.js ecosystem:
+
+- **Framework:** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animation:** 
+  - [GSAP](https://gsap.com/) (GreenSock Animation Platform) for complex and scroll-based animations.
+  - [Motion](https://motion.dev/) (framer-motion) for smooth micro-interactions.
+- **UI Components:** [Radix UI](https://www.radix-ui.com/) (Accordion, Dialog, Radio Group, etc.)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Utility:** `clsx`, `tailwind-merge`
+
+## 📂 Directory Structure
+
+```text
+src/
+├── app/             # Routing and Page components (App Router)
+├── components/      # Shared UI components
+│   ├── pages/       # Specific components for each page (Product page)
+│   └── ui/          # Base components from RadixUI/Shadcn
+├── constants/       # Static data, website content configuration
+├── context/         # React Context (Theme, State management)
+├── hooks/           # Custom React Hooks
+├── lib/             # Utility functions (utils, configuration)
+└── styles/          # Global and component-specific CSS (using Tailwind v4)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Clone the repository
+```bash
+git clone https://github.com/TN1608/pita-test.git
+cd pita-test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Install dependencies
+The project uses `npm` or `pnpm`:
+```bash
+npm install
+# or
+pnpm install
+```
 
-## Learn More
+### 3. Run the Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Build for Production
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Development Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The project focus is on accurately mimicking the interface and User Experience (UX) of the original page.
+- Utilizes **Lora** and **Geist** fonts for optimized typography.
+- The entire design is fully Responsive (Mobile-first).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Project by [TN1608](https://github.com/TN1608)*
